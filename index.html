@@ -37,6 +37,10 @@
               wiggle: {
                 '0%, 100%': { transform: 'rotate(-3deg)' },
                 '50%': { transform: 'rotate(3deg)' },
+              },
+              shimmer: {
+                '0%': { transform: 'translateX(-150%) skewX(-12deg)' },
+                '100%': { transform: 'translateX(150%) skewX(-12deg)' }
               }
             },
             animation: {
@@ -44,6 +48,7 @@
               'float': 'float 3s ease-in-out infinite',
               'wiggle': 'wiggle 2s ease-in-out infinite',
               'spin-slow': 'spin 12s linear infinite',
+              'shimmer': 'shimmer 1.5s infinite',
             }
           }
         }
